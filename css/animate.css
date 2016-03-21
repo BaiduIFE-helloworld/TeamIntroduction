@@ -1,0 +1,315 @@
+/*
+********** css animate stylesheey ==>
+*/
+.animate-box {
+    position: relative;
+}
+.animation-line {
+    position: absolute;
+    top:0 ;
+    width: 350px;
+}
+.animation-line-one {
+    animation-name: effect-left;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.animation-line-one .bash-input {
+    animation-delay: 2s;
+}
+.animation-line-two {
+    animation-name: effect-right;
+    animation-duration: 5s;
+    animation-delay: 4.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.animation-line-two .bash-input {
+    animation-delay: 6s;
+}
+.animation-line-tree {
+    animation-name: effect-left;
+    animation-duration: 5s;
+    animation-delay: 9s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.animation-line-tree .bash-input {
+    animation-delay: 10s;
+}
+.animation-pic {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    text-align: center;
+    animation-name: logo-left;
+    animation-duration: 2s;
+    animation-delay: 13.6s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.hello {
+    width: 70px;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: left;
+    color: #ff7073;
+    cursor: pointer;
+    animation: rotate-clockwise 1s ease-in-out;
+    transform-origin: center;
+    animation-delay: 14.5s;
+}
+.hello:hover {
+     animation: rotate-anticlockwise 1s ease-in-out;
+    animation-delay: 0;
+}
+.world {
+    width: 86px;
+    font-size: 28px;
+    margin-left: 140px;
+    text-align: left;
+    color: #7c8489;
+    cursor: pointer;
+    animation: rotate-anticlockwise 1s ease-in-out;
+    transform-origin: center;
+    animation-delay: 14.5s;
+}
+.world:hover {
+    animation: rotate-clockwise 1s ease-in-out;
+    animation-delay: 0;
+}
+.bash-input {
+    width: 190px;
+    height: 22px;
+    color: #ff7073;
+    font-size: inherit;
+    overflow: hidden;
+    vertical-align: bottom;
+    animation:  words 2s ease-in-out ;
+    animation-fill-mode: backwards
+}
+.see-more {
+    animation: arrow;
+    animation-timing-function ease:
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+}
+.see-more:hover {
+    animation: rotate-clockwise 1s ease-in-out;
+    animation-delay: 0;
+}
+/*
+********* keyframes
+*/
+/*
+******** effect-left animation
+*/
+@-webkit-keyframes effect-left {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    12% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    88% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+@keyframes effect-left {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    12% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    88% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+
+/*
+******** effect-right animation
+*/
+@-webkit-keyframes effect-right {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    12% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    88% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+@keyframes effect-right {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    12% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    88% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+
+/*
+******** logo-lefe animation
+*/
+
+@-webkit-keyframes logo-left {
+    0% {
+       transform: translateX(0%);
+       opacity: 0; 
+    }
+    30% {
+       transform: translateX(-100%);
+       opacity: 0.6; 
+    }
+    100% {
+       transform: translateX(-100%);
+       opacity: 1;  
+    }
+}
+@keyframes logo-left {
+    0% {
+       transform: translateX(0%);
+       opacity: 0; 
+    }
+    30% {
+       transform: translateX(-100%);
+       opacity: 0.6; 
+    }
+    100% {
+       transform: translateX(-100%);
+       opacity: 1;  
+    }
+}
+
+/*
+******** npm common animation
+*/
+@-webkit-keyframes words {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 190px;
+    }
+}
+
+@keyframes words {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 190px;
+    }
+}
+
+/*
+******** clockwise animation
+*/
+@-webkit-keyframes rotate-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+******** anticlockwise animation
+*/
+@-webkit-keyframes rotate-anticlockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotate-anticlockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*
+******** arrow animaation
+*/
+@-webkit-keyframes arrow {
+    0% {
+        font-size: 28px;
+        color: #666;
+    }
+    50% {
+        color: #ff7073;
+    }
+    100% {
+        font-size: 28px;
+        color: #666;
+    }
+}
+@keyframes arrow {
+    0% {
+        font-size: 28px;
+        color: #666;
+    }
+    50% {
+        color: #ff7073;
+    }
+    100% {
+        font-size: 28px;
+        color: #666;
+    }
+}
